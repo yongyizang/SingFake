@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SingFake Metadata Annotation Tool</title>
+  <style>
+    body {
+      min-width: 500px;
+      min-height: 600px;
+    }
+  </style>
+  <link rel="stylesheet" href="materialize/css/materialize.min.css">
+</head>
+
+<body>
+  <div id="container" style="padding:20px">
+    <h5>SingFake Metadata Annotation Tool</h5>
+    <p>Developed for SingFake. Hacked together by Yongyi Zang.</p>
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="url" type="text">
+        <label class="active" for="url">URL</label>
+      </div>
+      <div class="input-field col s12">
+        <input id="title" type="text">
+        <label class="active" for="title">Title</label>
+      </div>
+      <div class="input-field col s3">
+        <input id="platform" type="text">
+        <label class="active" for="platform">Platform</label>
+      </div>
+      <div class="input-field col s4">
+        <input id="singer" type="text">
+        <label class="active" for="singer">Singer</label>
+      </div>
+      <div class="input-field col s5">
+        <input id="model" type="text">
+        <label class="active" for="model">Model</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s6">
+        <p>Bonafide or Deepfake?</p>
+        <div class="switch">
+          <label>
+            Bonafide
+            <input type="checkbox" id="bonafide_or_deepfake">
+            <span class="lever"></span>
+            Deepfake
+          </label>
+        </div>
+      </div>
+      <div class="input-field col s6">
+        <input type="text" id="language" class="autocomplete">
+        <label for="language">Language?</label>
+        <span class="helper-text">Mandarin, Cantonese, Japanese, Korean or English. Fill in other ones as you see fit. We will clean it later.</span>
+      </div>
+    </div>
+  <a class="waves-effect waves-light btn" style="width:100%" id="submitButton">Submit</a>
+  </div>
+  <script src="popup.js"></script>
+  <script src="materialize/js/materialize.min.js"></script>
+</body>
+
+</html>

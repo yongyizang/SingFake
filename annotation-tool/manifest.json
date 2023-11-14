@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "SingFake Data Collection Tool",
+  "version": "1.0",
+  "description": "A tool used for metadata annotation of SingFake.",
+  "externally_connectable": {
+    "matches": [ "*://*/*"]
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },"action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "96": "logo.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["popup.js"]
+    }
+  ],
+  "icons": {
+    "96": "logo.png"
+  },
+  "permissions": [
+    "tabs",
+    "storage"
+  ]
+}
