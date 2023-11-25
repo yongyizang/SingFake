@@ -141,7 +141,7 @@ def train(args):
 
     # initialize model
     if args.model == 'resnet':
-        feat_model = ResNet(3, args.enc_dim, resnet_type='18', nclasses=2).to(args.device)
+        feat_model = ResNet(11, args.enc_dim, resnet_type='18', nclasses=2).to(args.device)
     elif args.model == 'lcnn':
         feat_model = LCNN(4, args, nclasses=2).to(args.device)
     elif args.model == 'rawnet':
