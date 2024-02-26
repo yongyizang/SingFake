@@ -8,7 +8,7 @@ This repository is under construction. We are actively preparing files for ease 
 
 ## Updates
 - Nov 2023: We released our metadata annotation tool (`annotation-tool/`) designed as a Chrome Extension to speed up the annotation process.
-- Sep 2023: We released our training and evaluation scripts as well as trained model checkpoints for reproducibility.
+- Sep 2023: We released our training and evaluation scripts, ~~as well as trained model checkpoints for reproducibility~~ due to copyright concerns, we do not release our trained model checkpoints.
 
 ## Directory Structure
 `dataset/` contains scripts related to preparing the dataset. Assuming you have a directory filled with downloaded FLAC files, you could run them first through `separate.py` to generate separated vocal stems and generate VAD timecodes, then use `split.py` to generate separated audio clips for training. We also provide `simulate_codec.py`, which is being used for generating our T03 subset.
